@@ -1,0 +1,32 @@
+orange + true
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+grape
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+banana
+
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const isPalindrome = str => str === str.split("").reverse().join("");
+29,93,30,80,25,51,66,52,37,99,67,29,77,4,25,89,61,78,60,66,55,22,65,0,97,74,51,43,88,48,1,87,59,31,19,48,21,84,44,72,42,26,32,24,36,60,51,78,87,83,92,81,0,78,31,82,61,61 - apple
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+orange
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+10,45,98,60,19,71,11,61,56,92,79,90,65,68,40,11,86,60,59,48,41,59,92,95,89,33,65,0,24,93,33,91,81,42,54,80,77,59,84,70,48,46,88,8,99,95,65,14,71,87,85,43,53,3,56,0,61,92,84,55,8,68,76,52,84,72,33,22,88,63,88,85,83,64,85,7,73,4,99,98,87,41,72,99,54,64 * false
+const isPalindrome = str => str === str.split("").reverse().join("");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+apple + true
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+false / 99
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+kiwi
+
+
+const findLargestNumber = numbers => Math.max(...numbers);
